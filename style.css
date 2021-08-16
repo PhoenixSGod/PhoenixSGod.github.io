@@ -88,9 +88,9 @@ label{
   width: 80vw
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 640px){
   .resumeImage{
-    width: 550px;
+    width: 640px;
   }
 }
 

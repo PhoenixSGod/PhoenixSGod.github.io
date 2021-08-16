@@ -5,6 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
+	<style>
+		div.Name, div.Email, div.Subject, div.Message {
+    text-align: center;
+		}
+
+	</style>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	 crossorigin="anonymous">
 	<link href="style.css" rel="stylesheet" type="text/css" />
@@ -15,14 +21,37 @@
 
 
 	<ul>
-		<li><a href="index.html"> Home</a></li>
-		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a class="active" href="contact.html"> Contact</a></li>
+	
 		<li><a href="social.html">Social Media</a></li>
 		<li><a href="resume.html">Resume</a></li>
-		<li><a href="hobbies.html">Hobbies</a></li>
+
 	</ul>
 
 	<h1>Contact</h1>
+
+
+<form id="myForm">
+	<div class="Name">
+		<li><label>First name:</label> <textarea rows="1" cols="28"></textarea></li> <br>
+  <li><label>Last name:</label> <textarea rows="1" cols="28"></textarea></li> <br>
+  </div>
+  <div class="Email"><li><label>Email:</label><textarea rows="1" cols="28"></textarea></li> <br>
+  </div>
+  <div class="Subject"> <li><label>Subject:</label><textarea rows="1" cols="28"></textarea></li> <br></div>
+ <div class="Message"><li><label>Leave your meassage:</label> <textarea rows="5" cols="28"></textarea></li> <br></div>
+  
+  <center><div class="Sumbit"><li><input type="button" onclick="myFunction()" value="Submit"></li></div></center>
+  </form>
+
+ 
+ <script>
+function myFunction() {
+  document.getElementById("myForm").reset();
+}
+</script>
+ 
 
 </body>
 
